@@ -3,11 +3,13 @@ import json
 from django.http import HttpResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import permission_required
 from django.shortcuts import render
 from cms.apis.menus import Menus
 
 
 @login_required(login_url='/login')
+@permission_required('menu.index_view', raise_exception=True)
 def index(request):
     '''首页'''
     data = {'menus': Menus().get_menus(request), 'code': 'index'}
@@ -46,6 +48,7 @@ def sign_out(request):
 
 
 @login_required(login_url='/login')
+@permission_required('menu.data_article_view', raise_exception=True)
 def article(request):
     '''文章列表'''
     data = {'menus': Menus().get_menus(request), 'code': 'data_article'}
