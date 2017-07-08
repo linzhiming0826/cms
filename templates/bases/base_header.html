@@ -1,0 +1,15 @@
+{% load static %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> {% block title %}{% endblock %}
+<meta name="description" content="TuoX">
+<meta name="keywords" content="TuoX">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="apple-mobile-web-app-title" content="TuoX" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="icon" type="image/png" href="{% static 'assets/i/favicon.png' %}">
+<link rel="apple-touch-icon-precomposed" href="{% static 'assets/i/app-icon72x72@2x.png' %}">
+<link rel="stylesheet" href="{% static 'assets/css/amazeui.min.css' %}" />
+<link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+{% block header_link %}{% endblock %} {% block header_script %}{% endblock %}

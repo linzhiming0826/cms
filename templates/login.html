@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% csrf_token %}
+<head>
+    {% include 'bases/base_header.html' %} {% block title %}
+    <title>登录</title>{% endblock %}
+</head>
+
+<body data-type="login">
+
+    <div class="am-g tpl-g">
+        {% include 'bases/base_skiner.html' %}
+        <div class="tpl-login">
+            <div class="tpl-login-content">
+                <div class="tpl-login-logo">
+                </div>
+                <form class="am-form tpl-form-line-form">
+                    <div class="am-form-group">
+                        <input type="text" class="tpl-form-input" id="userName" placeholder="请输入账号">
+                    </div>
+                    <div class="am-form-group">
+                        <input type="password" class="tpl-form-input" id="password" placeholder="请输入密码">
+                    </div>
+                    <div class="am-form-group tpl-login-remember-me">
+                        <lable id="msg">
+                        </lable>
+                    </div>
+                    <div class="am-form-group">
+                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn" onclick="login()">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% include 'bases/base_footer.html' %} {% block footer_script %}
+    <script src="{% static 'cms/js/csrftoken.js' %}"></script>
+    <script src="{% static 'cms/js/sign_in.js' %}"></script>{% endblock %}
+
+</body>
+
+</html>
