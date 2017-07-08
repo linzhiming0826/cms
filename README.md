@@ -2,8 +2,10 @@
 
 ### UI部分
 
-首先得感谢妹子UI官方网站提供的模板 <a href="http://tpl.amazeui.org/content.html?21">链接</a>
+首先得感谢妹子UI官方网站提供的模板 [链接](http://tpl.amazeui.org/content.html?21)
+
 其实用妹子UI也是一个巧合，因为自己用的一直bootstrap，那天忽然在网页看到妹子UI的介绍，于是就点进去一看。
+
 现在国产框架已经相当成熟了，echart也是我一直在用的，所以就打算用妹子UI来写写。
 
 ### Django
@@ -47,10 +49,13 @@
     
 #### 预览
 
-    ![电脑1](/docs/img/1.png)
-    ![电脑2](/docs/img/2.png)
-    ![手机端1](/docs/img/3.jpg)
-    ![手机端2](/docs/img/4.jpg)
+![电脑1](/docs/img/1.png)
+    
+![电脑2](/docs/img/2.png)
+    
+![手机端1](/docs/img/3.jpg)
+    
+![手机端2](/docs/img/4.jpg)
 
 
 
